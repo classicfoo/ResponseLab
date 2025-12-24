@@ -13,7 +13,10 @@ ensure_session();
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 if ($path === '/' || $path === '') {
-    redirect('/admin');
+    render('home', [
+        'title' => 'ResponseLab',
+    ]);
+    exit;
 }
 
 if (preg_match('#^/t/([a-z0-9-]+)$#', $path, $matches)) {
