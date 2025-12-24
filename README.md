@@ -29,7 +29,6 @@ ResponseLab is a lightweight, framework-free PHP app for running A/B tests and c
   styles.css
 /data
   app.sqlite (created automatically)
-/public
   index.php
 /uploads
 /views
@@ -39,12 +38,12 @@ ResponseLab is a lightweight, framework-free PHP app for running A/B tests and c
 1. Ensure PHP 8+ with SQLite enabled.
 2. From the repo root:
    ```bash
-   php -S localhost:8000 -t public
+   php -S localhost:8000
    ```
 3. Visit `http://localhost:8000/admin/setup.php` to create the first admin.
 4. Log in at `http://localhost:8000/admin/login.php`.
 
-> Note: When using the built-in PHP server, `/admin` is not under `/public`. You can instead run `php -S localhost:8000` from the repo root and access `/admin` directly.
+> Note: Run the built-in PHP server from the repo root so `/admin` resolves correctly.
 
 ## Shared Hosting Deployment
 1. Upload the repository contents to your hosting root.
