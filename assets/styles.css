@@ -1,0 +1,28 @@
+body {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+}
+
+.badge {
+    background: #f3f4f6;
+    color: #111827;
+    border-radius: 9999px;
+    padding: 0.125rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+.image-grid img {
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+}
+
+textarea:disabled,
+input:disabled,
+select:disabled {
+    background-color: #f3f4f6;
+}
